@@ -1,0 +1,24 @@
+==============================================================================
+Suites                                                                        
+==============================================================================
+Suites.TC02 InputBox                                                          
+==============================================================================
+TestingInputBox                                                         
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\a to z\PycharmProjects\AutomationProject\Project_TestCases\TC02_InputBox.robot:9
+    T:  TestingInputBox    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\a to z\PycharmProjects\AutomationProject\Project_TestCases\TC02_InputBox.robot:28
+      Sleep    
+______________________________________________________________________________
+| FAIL |
+Keyword 'BuiltIn.Sleep' expected 1 to 2 arguments, got 0.
+------------------------------------------------------------------------------
+Suites.TC02 InputBox                                                  | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+Suites                                                                | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+Output:  C:\Users\a to z\PycharmProjects\AutomationProject\pabot_results\1\output.xml

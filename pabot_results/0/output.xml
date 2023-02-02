@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0.1 (Python 3.11.1 on win32)" generated="20230127 12:18:31.226" rpa="false" schemaversion="3">
+<suite id="s1" name="Suites">
+<suite id="s1-s1" name="TC01 Login" source="C:\Users\a to z\PycharmProjects\AutomationProject\Project_TestCases\TC01_Login.robot">
+<test id="s1-s1-t1" name="LoginTest" line="10">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230127 12:18:31.552" level="INFO">Opening browser 'chrome' to base url 'https://demo.nopcommerce.com/'.</msg>
+<status status="PASS" starttime="20230127 12:18:31.551" endtime="20230127 12:18:41.767"/>
+</kw>
+<kw name="LoginToApplication">
+<kw name="Click Link" library="SeleniumLibrary">
+<arg>xpath://a[@class="ico-login"]</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<msg timestamp="20230127 12:18:41.770" level="INFO">Clicking link 'xpath://a[@class="ico-login"]'.</msg>
+<status status="PASS" starttime="20230127 12:18:41.768" endtime="20230127 12:18:43.103"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id:Email</arg>
+<arg>ak.mohmnd@gmail.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230127 12:18:43.105" level="INFO">Typing text 'ak.mohmnd@gmail.com' into text field 'id:Email'.</msg>
+<status status="PASS" starttime="20230127 12:18:43.103" endtime="20230127 12:18:43.217"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2 seconds</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230127 12:18:45.218" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230127 12:18:43.217" endtime="20230127 12:18:45.218"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id=Password</arg>
+<arg>Ak.mohmnd1</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230127 12:18:45.221" level="INFO">Typing text 'Ak.mohmnd1' into text field 'id=Password'.</msg>
+<status status="PASS" starttime="20230127 12:18:45.219" endtime="20230127 12:18:45.327"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://button[@class="button-1 login-button"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230127 12:18:45.328" level="INFO">Clicking element 'xpath://button[@class="button-1 login-button"]'.</msg>
+<status status="PASS" starttime="20230127 12:18:45.327" endtime="20230127 12:18:45.835"/>
+</kw>
+<status status="PASS" starttime="20230127 12:18:41.767" endtime="20230127 12:18:45.836"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230127 12:18:45.836" endtime="20230127 12:18:48.110"/>
+</kw>
+<status status="PASS" starttime="20230127 12:18:31.550" endtime="20230127 12:18:48.111"/>
+</test>
+<status status="PASS" starttime="20230127 12:18:31.264" endtime="20230127 12:18:48.113"/>
+</suite>
+<status status="PASS" starttime="20230127 12:18:31.240" endtime="20230127 12:18:48.115"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Suites">Suites</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="TC01 Login">Suites.TC01 Login</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

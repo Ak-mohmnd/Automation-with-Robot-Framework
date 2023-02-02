@@ -1,0 +1,26 @@
+datasources:6cc4166b13f5034d7c622479106e30aeffa269b1
+commandlineoptions:9f8598a690c7367accf83ead504756ddd374acc9
+suitesfrom:no-suites-from-option
+file:8133e8d132ecc7180bb578d2a04bd9a0dd35f21a
+--suite Suites.TC01 Login
+--suite Suites.TC02 InputBox
+--suite Suites.TC03 RadioBox
+--suite Suites.TC04 CloseAll
+--suite Suites.TC05 Alerts
+--suite Suites.TC06 FramesHandling
+--suite Suites.TC07 TabbedWindows
+--suite Suites.TC08 SwtichingWindows
+--suite Suites.TC09 NavigationalKeywords
+--suite Suites.TC10 CaptureScreen
+--suite Suites.TC11 MouseOperation
+--suite Suites.TC12 UserKeywords
+--suite Suites.TC13 ScrollingPage
+--suite Suites.TC14 ForLoop
+--suite Suites.TC15 AllLinks
+--suite Suites.TC16 DataDrivenTest1
+--suite Suites.TC16 DataDrivenTest2
+--suite Suites.TC16 DataDrivenTest3
+--suite Suites.TC17 DBTesting
+--suite Suites.TC18 Tagging
+--suite Suites.TC19 POM 01
+--suite Suites.TC19 POM 02

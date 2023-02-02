@@ -22,7 +22,7 @@ Registration
     Enter_Address   Toronto
     Enter_Country   CANADA
     sleep   2
-    Enter_UserName  acbd1234
+    Enter_UserName  acbd12345
     Enter_Password  123456
     Enter_ConfirmPass   123456
     sleep   2

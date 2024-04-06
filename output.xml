@@ -1,98 +1,56 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 6.0.1 (Python 3.11.1 on win32)" generated="20230127 12:28:38.522" rpa="false" schemaversion="3">
-<suite id="s1" name="TC19 POM 01" source="C:\Users\a to z\PycharmProjects\AutomationProject\Project_TestCases\TC19_POM_01.robot">
-<test id="s1-t1" name="LogIn" line="12">
-<kw name="Open My Browser" library="TC19_Login">
-<arg>${url}</arg>
-<arg>${browser}</arg>
-<kw name="Open Browser" library="SeleniumLibrary">
+<robot generator="Robot 7.0 (Python 3.12.2 on darwin)" generated="2024-04-06T22:45:36.074084" rpa="false" schemaversion="5">
+<suite id="s1" name="TC01 Login" source="/Users/muhammadabbaskhan/Desktop/Automation-with-Robot-Framework/Project_TestCases/TC01_Login.robot">
+<test id="s1-t1" name="LoginTest" line="10">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-04-06T22:45:36.301891" level="INFO">Opening browser 'chrome' to base url 'https://demo.nopcommerce.com/'.</msg>
 <arg>${url}</arg>
 <arg>${browser}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20230127 12:28:38.827" level="INFO">Opening browser 'headlessfirefox' to base url 'https://demo.guru99.com/test/newtours/'.</msg>
-<msg timestamp="20230127 12:28:38.834" level="INFO">Firefox driver log is always forced to to: C:\Users\a to z\PycharmProjects\AutomationProject\geckodriver-1.log</msg>
-<status status="PASS" starttime="20230127 12:28:38.826" endtime="20230127 12:29:17.263"/>
+<status status="PASS" start="2024-04-06T22:45:36.301633" elapsed="9.807830"/>
 </kw>
-<kw name="Maximize Browser Window" library="SeleniumLibrary">
-<doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20230127 12:29:17.263" endtime="20230127 12:29:17.268"/>
+<kw name="LoginToApplication">
+<kw name="Click Link" owner="SeleniumLibrary">
+<msg time="2024-04-06T22:45:46.111325" level="INFO">Clicking link 'xpath://a[@class="ico-login"]'.</msg>
+<arg>xpath://a[@class="ico-login"]</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-06T22:45:46.110840" elapsed="1.310925"/>
 </kw>
-<kw name="Sleep" library="BuiltIn">
-<arg>2</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20230127 12:29:19.269" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20230127 12:29:17.268" endtime="20230127 12:29:19.269"/>
-</kw>
-<status status="PASS" starttime="20230127 12:28:38.825" endtime="20230127 12:29:19.269"/>
-</kw>
-<kw name="Sleep" library="BuiltIn">
-<arg>2</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20230127 12:29:21.271" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20230127 12:29:19.269" endtime="20230127 12:29:21.271"/>
-</kw>
-<kw name="Enter_UserName" library="TC19_Login">
-<arg>${UserName}</arg>
-<kw name="Input Text" library="SeleniumLibrary">
-<arg>${TXT_UserName}</arg>
-<arg>${UserName}</arg>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-04-06T22:45:47.422343" level="INFO">Typing text 'ak.mohmnd@gmail.com' into text field 'id:Email'.</msg>
+<arg>id:Email</arg>
+<arg>ak.mohmnd@gmail.com</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20230127 12:29:21.276" level="INFO">Typing text 'abcd1234' into text field 'name:userName'.</msg>
-<status status="PASS" starttime="20230127 12:29:21.273" endtime="20230127 12:29:21.337"/>
+<status status="PASS" start="2024-04-06T22:45:47.422097" elapsed="0.148542"/>
 </kw>
-<status status="PASS" starttime="20230127 12:29:21.272" endtime="20230127 12:29:21.337"/>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-04-06T22:45:49.571103" level="INFO">Slept 2 seconds.</msg>
+<arg>2 seconds</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-04-06T22:45:47.570817" elapsed="2.000380"/>
 </kw>
-<kw name="Enter_Password" library="TC19_Login">
-<arg>${UserPassowrd}</arg>
-<kw name="Input Text" library="SeleniumLibrary">
-<arg>${TXT_Password}</arg>
-<arg>${UserPassword}</arg>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-04-06T22:45:49.571521" level="INFO">Typing text 'Ak.mohmnd1' into text field 'id=Password'.</msg>
+<arg>id=Password</arg>
+<arg>Ak.mohmnd1</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20230127 12:29:21.339" level="INFO">Typing text '123456' into text field 'name:password'.</msg>
-<status status="PASS" starttime="20230127 12:29:21.339" endtime="20230127 12:29:21.361"/>
+<status status="PASS" start="2024-04-06T22:45:49.571344" elapsed="0.068800"/>
 </kw>
-<status status="PASS" starttime="20230127 12:29:21.338" endtime="20230127 12:29:21.361"/>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-04-06T22:45:49.640506" level="INFO">Clicking element 'xpath://button[@class="button-1 login-button"]'.</msg>
+<arg>xpath://button[@class="button-1 login-button"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-06T22:45:49.640324" elapsed="0.470324"/>
 </kw>
-<kw name="Sleep" library="BuiltIn">
-<arg>2</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20230127 12:29:23.363" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20230127 12:29:21.362" endtime="20230127 12:29:23.363"/>
+<status status="PASS" start="2024-04-06T22:45:46.110317" elapsed="4.000559"/>
 </kw>
-<kw name="Click_SignIn" library="TC19_Login">
-<kw name="Click Button" library="SeleniumLibrary">
-<arg>${BTN_SignIn}</arg>
-<doc>Clicks the button identified by ``locator``.</doc>
-<msg timestamp="20230127 12:29:23.367" level="INFO">Clicking button 'xpath://input[@name='submit']'.</msg>
-<status status="PASS" starttime="20230127 12:29:23.365" endtime="20230127 12:29:26.872"/>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-04-06T22:45:50.111134" elapsed="0.101270"/>
 </kw>
-<status status="PASS" starttime="20230127 12:29:23.364" endtime="20230127 12:29:26.872"/>
-</kw>
-<kw name="Sleep" library="BuiltIn">
-<arg>2</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20230127 12:29:28.873" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20230127 12:29:26.873" endtime="20230127 12:29:28.873"/>
-</kw>
-<kw name="Verify Successful_Login" library="TC19_Login">
-<kw name="Page Should Contain" library="SeleniumLibrary">
-<arg>Login Successfully</arg>
-<doc>Verifies that current page contains ``text``.</doc>
-<msg timestamp="20230127 12:29:28.884" level="INFO">Current page contains text 'Login Successfully'.</msg>
-<status status="PASS" starttime="20230127 12:29:28.873" endtime="20230127 12:29:28.884"/>
-</kw>
-<status status="PASS" starttime="20230127 12:29:28.873" endtime="20230127 12:29:28.884"/>
-</kw>
-<kw name="Close My Browser" library="TC19_Login">
-<kw name="Close All Browsers" library="SeleniumLibrary">
-<doc>Closes all open browsers and resets the browser cache.</doc>
-<status status="PASS" starttime="20230127 12:29:28.885" endtime="20230127 12:29:37.906"/>
-</kw>
-<status status="PASS" starttime="20230127 12:29:28.884" endtime="20230127 12:29:37.906"/>
-</kw>
-<status status="PASS" starttime="20230127 12:28:38.824" endtime="20230127 12:29:37.907"/>
+<status status="PASS" start="2024-04-06T22:45:36.300833" elapsed="13.911923"/>
 </test>
-<status status="PASS" starttime="20230127 12:28:38.524" endtime="20230127 12:29:37.912"/>
+<status status="PASS" start="2024-04-06T22:45:36.075176" elapsed="14.138355"/>
 </suite>
 <statistics>
 <total>
@@ -101,7 +59,7 @@
 <tag>
 </tag>
 <suite>
-<stat pass="1" fail="0" skip="0" id="s1" name="TC19 POM 01">TC19 POM 01</stat>
+<stat pass="1" fail="0" skip="0" id="s1" name="TC01 Login">TC01 Login</stat>
 </suite>
 </statistics>
 <errors>
